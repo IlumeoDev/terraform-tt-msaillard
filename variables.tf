@@ -1,35 +1,24 @@
 variable "vpn_instance_ip" {
-  type = string
-  default = "10.17.9.100"
-  description = "The IP of the vpn instance"
-}
-
-variable "vpn_subdomain" {
-  type = string
-  default = "admin."
-  description = "The sub domain name of the vpn that is use to access the vpn admin dashboard"
+  type        = string
+  description = "The IP of the VPN instance"
 }
 
 variable "vpn_hosted_zone_name" {
-  type = string
-  default = "vpn.mydomain.com"
-  description = "The name of the hosted zone where we set the record of the vpn subdomain"
+  type        = string
+  description = "The hosted zone name for the VPN"
 }
 
 variable "gitlab_instance_ip" {
-  type = string
-  default = "10.17.8.100"
+  type        = string
   description = "The IP of the Gitlab instance"
 }
 
 variable "gitlab_hosted_zone_name" {
-  type = string
-  default = "gitlab.mydomain.com"
-  description = "The name of the hosted zone where we set the record of the gitlab domain"
+  type        = string
+  description = "The hosted zone name for Gitlab"
 }
 
 variable "shared_hosted_zone_name" {
-  type = string
-  default = "shared.mydomain.com"
-  description = "The name of the hosted zone where we set the record of the shared subdomains"
+  type        = string
+  description = "The shared hosted zone name"
 }
